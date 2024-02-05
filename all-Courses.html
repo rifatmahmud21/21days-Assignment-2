@@ -30,10 +30,10 @@
         <div>
             <ul class="flex flex-wrap justify-center items-center text-stone-600 py-2 text-sm md:text-lg">
                 <li class="hover:text-green-500">
-                    <a href="#">Books</a>
+                    <a href="index.html">Home Page</a>
                 </li>
                 <li class="ms-5 hover:text-green-500">
-                    <a href="all-Courses.html">Courses</a>
+                    <a href="#">Books</a>
                 </li>
                 <li class="ms-5 hover:text-green-500">
                     <a href="#">Others</a>
@@ -42,11 +42,13 @@
                     <a href="#">Blog</a>
                 </li>
                 <li class="ms-5 mt-5 md:mt-0">
-                    <a class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full" href="#">Sign in</a>
+                    <a class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-600"
+                        href="#">Sign out</a>
                 </li>
             </ul>
         </div>
     </nav>
+
 
     <!-- Cards Section -->
     <section class="my-20">
@@ -58,17 +60,18 @@
         <figure class="flex flex-wrap-reverse justify-center gap-10 mt-20">
 
             <!-- Card 1 -->
-            <div class="flex flex-wrap justify-center gap-10">
-                <div
-                    class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl max-h-[400px]">
-                    <!-- Card Image -->
+            <div class="flex flex-wrap justify-center gap-10 ">
+
+                <!-- Card Image -->
+                <div class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl max-h-[365px]">
                     <img class="rounded-3xl images" src="img/course (1).jpeg" alt="" />
                     <h3 class="mt-5 text-lg">Modern Psychology 1</h3>
-                    <p class="text-xs"><span class="taka">1100</span> TK</p>
+                    <p class="text-xs"><span class="taka">2100</span> TK</p>
 
                     <!-- Buy Button -->
-                    <button class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3 buy-button"
-                        id="cardButton">
+                    <button
+                        class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3 buy-button hover:bg-green-600"
+                        onclick="addToCart(1, 'Modern Psychology 1', 100, 'img/course (1).jpeg', 'buyButton1', 'seats1')">
                         Buy Course
                     </button>
 
@@ -79,22 +82,23 @@
 
                         <!-- available Seats -->
                         <p>
-                            <i class="bx bx-user-check"></i><span class="text-xs ps-2">60 seats</span>
+                            <i class="bx bx-user-check"></i><span id="seats1" class="text-xs ps-2">60 seats</span>
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div
-                    class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl max-h-[400px]">
+                <div class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl max-h-[365px]">
+
                     <!-- Card Image -->
                     <img class="rounded-3xl images" src="img/course (2).jpeg" alt="" />
                     <h3 class="mt-5 text-lg">Modern Psychology 2</h3>
-                    <p class="text-xs"><span class="taka">2200</span> TK</p>
+                    <p class="text-xs"><span class="taka">1200</span> TK</p>
 
                     <!-- Buy Button -->
-                    <button class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3 buy-button"
-                        id="cardButton">
+                    <button
+                        class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3 buy-button hover:bg-green-600"
+                        onclick="buyCourse(2)">
                         Buy Course
                     </button>
 
@@ -105,22 +109,23 @@
 
                         <!-- available Seats -->
                         <p>
-                            <i class="bx bx-user-check"></i><span class="text-xs ps-2">60 seats</span>
+                            <i class="bx bx-user-check"></i><span id="seats2" class="text-xs ps-2">60 seats</span>
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div
-                    class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl max-h-[400px]">
+                <div class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl max-h-[365px]">
+
                     <!-- Card Image -->
                     <img class="rounded-3xl images" src="img/course (3).jpeg" alt="" />
                     <h3 class="mt-5 text-lg">Modern Psychology 3</h3>
-                    <p class="text-xs"><span class="taka">1300</span> TK</p>
+                    <p class="text-xs"><span class="taka">2300</span> TK</p>
 
                     <!-- Buy Button -->
-                    <button class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3 buy-button "
-                        id="cardButton">
+                    <button
+                        class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3 buy-button hover:bg-green-600"
+                        onclick="buyCourse(3)">
                         Buy Course
                     </button>
 
@@ -131,22 +136,23 @@
 
                         <!-- available Seats -->
                         <p>
-                            <i class="bx bx-user-check"></i><span class="text-xs ps-2">60 seats</span>
+                            <i class="bx bx-user-check"></i><span id="seats3" class="text-xs ps-2">60 seats</span>
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
-                <div
-                    class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl max-h-[400px]">
+                <div class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl max-h-[365px]">
+
                     <!-- Card Image -->
                     <img class="rounded-3xl images" src="img/course (4).jpeg" alt="" />
                     <h3 class="mt-5 text-lg">Modern Psychology 4</h3>
-                    <p class="text-xs"><span class="taka">1250</span> TK</p>
+                    <p class="text-xs"><span class="taka">1300</span> TK</p>
 
                     <!-- Buy Button -->
-                    <button class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3 buy-button"
-                        id="cardButton">
+                    <button
+                        class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3 buy-button hover:bg-green-600"
+                        onclick="buyCourse(4)">
                         Buy Course
                     </button>
 
@@ -157,11 +163,12 @@
 
                         <!-- available Seats -->
                         <p>
-                            <i class="bx bx-user-check"></i><span class="text-xs ps-2">60 seats</span>
+                            <i class="bx bx-user-check"></i><span id="seats4" class="text-xs ps-2">60 seats</span>
                         </p>
                     </div>
                 </div>
             </div>
+
 
             <!-- Buy Course Section -->
             <div
@@ -177,7 +184,7 @@
                         <div>
                             <p class="text-sm text-gray-600">Sub Total</p>
                             <p class="text-xs text-gray-600">
-                                <span id="item-count">0</span> Iteams
+                                <span id="item-count">0</span> Items
                             </p>
                         </div>
                         <div>
@@ -185,7 +192,10 @@
                         </div>
                     </div>
                     <div class="text-right my-3">
-                        <a class="bg-green-500 text-white rounded-full px-4 py-2 text-sm mt-3" href="#">Checkout</a>
+                        <button class="bg-green-500 text-white rounded-full px-4 py-2 text-sm mt-3 hover:bg-green-600"
+                            onclick="checkout()">
+                            Checkout
+                        </button>
                     </div>
                 </div>
             </div>
@@ -245,6 +255,7 @@
         </p>
     </footer>
 
+    <!-- JavaScript codes -->
     <script src="main.js"></script>
 </body>
 
