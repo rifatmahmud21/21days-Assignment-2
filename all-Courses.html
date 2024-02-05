@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RM E-School</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/School_logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/School_logo.png" type="image/x-icon" />
     <!-- Tailwind Css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Raw Css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -22,26 +22,26 @@
         <div class="flex items-center ">
 
             <!-- main Logo -->
-            <img class="h-[50px]" src="img/School_logo.png" alt="">
-            <h1 class="text-3xl font-bold ms-3 text-stone-600">RM E-School</h1>
+            <img class="h-[30px] md:h-[50px]" src="img/School_logo.png" alt="">
+            <h1 class="text-xl md:text-3xl font-bold ms-3 text-stone-600">RM E-School</h1>
         </div>
 
         <!-- Navbar Links -->
         <div>
-            <ul class="flex items-center text-stone-600 py-2">
-                <li class="hover:text-green-500 ">
+            <ul class="flex flex-wrap justify-center items-center text-stone-600 py-2 text-sm md:text-lg">
+                <li class="hover:text-green-500">
                     <a href="#">Books</a>
                 </li>
-                <li class="ms-5 hover:text-green-500 ">
-                    <a href="#">Courses</a>
+                <li class="ms-5 hover:text-green-500">
+                    <a href="all-Courses.html">Courses</a>
                 </li>
-                <li class="ms-5 hover:text-green-500 ">
+                <li class="ms-5 hover:text-green-500">
                     <a href="#">Others</a>
                 </li>
-                <li class="ms-5 hover:text-green-500 ">
+                <li class="ms-5 hover:text-green-500">
                     <a href="#">Blog</a>
                 </li>
-                <li class="ms-5  ">
+                <li class="ms-5 mt-5 md:mt-0">
                     <a class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full" href="#">Sign in</a>
                 </li>
             </ul>
@@ -51,7 +51,7 @@
     <!-- Cards Section -->
     <section class="my-20">
         <div>
-            <h2 class=" text-4xl font-bold text-stone-600 ps-20">All Courses</h2>
+            <h2 class="text-4xl font-bold text-stone-600 ps-20">All Courses</h2>
         </div>
 
         <!-- cards -->
@@ -59,128 +59,151 @@
 
             <!-- Card 1 -->
             <div class="flex flex-wrap justify-center gap-10">
-
-                <!-- Card Image -->
-                <div class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl">
-                    <img class="rounded-3xl" src="img/course (1).jpeg" alt="">
-                    <h3 class="mt-5 text-lg">Modern Psychology</h3>
-                    <p class="text-xs">1300 TK</p>
+                <div
+                    class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl max-h-[400px]">
+                    <!-- Card Image -->
+                    <img class="rounded-3xl images" src="img/course (1).jpeg" alt="" />
+                    <h3 class="mt-5 text-lg">Modern Psychology 1</h3>
+                    <p class="text-xs"><span class="taka">1100</span> TK</p>
 
                     <!-- Buy Button -->
-                    <button class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3">Buy Course</button>
+                    <button class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3 buy-button"
+                        id="cardButton">
+                        Buy Course
+                    </button>
 
                     <div class="flex justify-between mt-5">
-                        <p> <i class='bx bx-calendar'></i><span class="text-xs ps-2">Start 20 April, 2021</span></p>
+                        <p>
+                            <i class="bx bx-calendar"></i><span class="text-xs ps-2">Start 20 April, 2021</span>
+                        </p>
 
                         <!-- available Seats -->
                         <p>
-                            <i class='bx bx-user-check'></i><span class="text-xs ps-2">60 seats</span>
+                            <i class="bx bx-user-check"></i><span class="text-xs ps-2">60 seats</span>
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl">
-
+                <div
+                    class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl max-h-[400px]">
                     <!-- Card Image -->
-                    <img class="rounded-3xl" src="img/course (2).jpeg" alt="">
-                    <h3 class="mt-5 text-lg">Modern Psychology</h3>
-                    <p class="text-xs">1300 TK</p>
+                    <img class="rounded-3xl images" src="img/course (2).jpeg" alt="" />
+                    <h3 class="mt-5 text-lg">Modern Psychology 2</h3>
+                    <p class="text-xs"><span class="taka">2200</span> TK</p>
 
                     <!-- Buy Button -->
-                    <button class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3">Buy Course</button>
+                    <button class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3 buy-button"
+                        id="cardButton">
+                        Buy Course
+                    </button>
 
                     <div class="flex justify-between mt-5">
-                        <p><i class='bx bx-calendar'></i><span class="text-xs ps-2">Start 20 April, 2021</span></p>
+                        <p>
+                            <i class="bx bx-calendar"></i><span class="text-xs ps-2">Start 20 April, 2021</span>
+                        </p>
 
                         <!-- available Seats -->
                         <p>
-                            <i class='bx bx-user-check'></i><span class="text-xs ps-2">60 seats</span>
+                            <i class="bx bx-user-check"></i><span class="text-xs ps-2">60 seats</span>
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl">
-
+                <div
+                    class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl max-h-[400px]">
                     <!-- Card Image -->
-                    <img class="rounded-3xl" src="img/course (3).jpeg" alt="">
-                    <h3 class="mt-5 text-lg">Modern Psychology</h3>
-                    <p class="text-xs">1300 TK</p>
+                    <img class="rounded-3xl images" src="img/course (3).jpeg" alt="" />
+                    <h3 class="mt-5 text-lg">Modern Psychology 3</h3>
+                    <p class="text-xs"><span class="taka">1300</span> TK</p>
 
                     <!-- Buy Button -->
-                    <button class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3">Buy Course</button>
+                    <button class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3 buy-button "
+                        id="cardButton">
+                        Buy Course
+                    </button>
 
                     <div class="flex justify-between mt-5">
-                        <p><i class='bx bx-calendar'></i><span class="text-xs ps-2">Start 20 April, 2021</span></p>
+                        <p>
+                            <i class="bx bx-calendar"></i><span class="text-xs ps-2">Start 20 April, 2021</span>
+                        </p>
 
                         <!-- available Seats -->
                         <p>
-                            <i class='bx bx-user-check'></i><span class="text-xs ps-2">60 seats</span>
+                            <i class="bx bx-user-check"></i><span class="text-xs ps-2">60 seats</span>
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl">
-
+                <div
+                    class="max-w-[300px] bg-white px-2 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl max-h-[400px]">
                     <!-- Card Image -->
-                    <img class="rounded-3xl" src="img/course (4).jpeg" alt="">
-                    <h3 class="mt-5 text-lg">Modern Psychology</h3>
-                    <p class="text-xs">1300 TK</p>
+                    <img class="rounded-3xl images" src="img/course (4).jpeg" alt="" />
+                    <h3 class="mt-5 text-lg">Modern Psychology 4</h3>
+                    <p class="text-xs"><span class="taka">1250</span> TK</p>
 
                     <!-- Buy Button -->
-                    <button class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3">Buy Course</button>
+                    <button class="bg-green-500 text-white rounded-full px-3 py-1 text-xs mt-3 buy-button"
+                        id="cardButton">
+                        Buy Course
+                    </button>
 
                     <div class="flex justify-between mt-5">
-                        <p><i class='bx bx-calendar'></i><span class="text-xs ps-2">Start 20 April, 2021</span></p>
+                        <p>
+                            <i class="bx bx-calendar"></i><span class="text-xs ps-2">Start 20 April, 2021</span>
+                        </p>
 
                         <!-- available Seats -->
                         <p>
-                            <i class='bx bx-user-check'></i><span class="text-xs ps-2">60 seats</span>
+                            <i class="bx bx-user-check"></i><span class="text-xs ps-2">60 seats</span>
                         </p>
                     </div>
                 </div>
-
-
             </div>
 
             <!-- Buy Course Section -->
             <div
-                class="max-w-[300px] bg-white px-3 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl min-w-[350px] flex flex-col justify-between ">
-
-                <div class="text-green-500 text-center rounded-full px-3 py-1 text-lg mt-3">Your Courses</div>
-
+                class="max-w-[300px] bg-white px-3 py-3 drop-shadow-lg hover:drop-shadow-xl rounded-3xl min-w-[350px] flex flex-col justify-between">
+                <div class="text-green-500 text-center rounded-full px-3 py-1 text-lg mt-3">
+                    Your Courses
+                </div>
+                <div id="cart-container"></div>
 
                 <div>
-                    <hr class="my-2">
+                    <hr class="my-2" />
                     <div class="flex flex-row justify-between items-top ms-10">
                         <div>
-                            <p class="text-sm text-gray-600">Sub Total </p>
-                            <p class="text-xs text-gray-600"><span>0</span> Iteams</p>
+                            <p class="text-sm text-gray-600">Sub Total</p>
+                            <p class="text-xs text-gray-600">
+                                <span id="item-count">0</span> Iteams
+                            </p>
                         </div>
                         <div>
-                            <h3 class="text-2xl "><span>00</span> Tk</h3>
+                            <h3 class="text-2xl"><span id="subtotal">00</span></h3>
                         </div>
                     </div>
-                    <div class="text-right my-3"><a class="bg-green-500 text-white rounded-full px-4 py-2 text-sm mt-3"
-                            href="#">Checkout</a></div>
+                    <div class="text-right my-3">
+                        <a class="bg-green-500 text-white rounded-full px-4 py-2 text-sm mt-3" href="#">Checkout</a>
+                    </div>
                 </div>
             </div>
         </figure>
     </section>
-
 
     <!-- Footer Section -->
     <footer class="mt-20 bg-gray-800 pt-10">
         <div class="flex flex-wrap gap-20 justify-center items-top">
             <div>
                 <div class="flex justify-left items-center gap-4">
-                    <img class="w-[60px]" src="img/School_logo.png" alt="">
+                    <img class="w-[60px]" src="img/School_logo.png" alt="" />
                     <h2 class="text-purple-700 font-bold text-lg">RM E-School</h2>
                 </div>
-                <p class="pt-10 text-white text-xs max-w-[300px]">Millions of people of all ages and from around
-                    the world are improving their lives with us</p>
+                <p class="pt-10 text-white text-xs max-w-[300px]">
+                    Millions of people of all ages and from around the world are
+                    improving their lives with us
+                </p>
             </div>
 
             <!-- Important Links -->
@@ -217,14 +240,12 @@
         </div>
 
         <!-- Copyright Text -->
-        <p class="text-center mt-10 pb-3 text-gray-600">Copyright © 2024 Rifat_Mahmud </p>
+        <p class="text-center mt-10 pb-3 text-gray-600">
+            Copyright © 2024 Rifat_Mahmud
+        </p>
     </footer>
 
-
-
-
-
-
+    <script src="main.js"></script>
 </body>
 
 </html>
